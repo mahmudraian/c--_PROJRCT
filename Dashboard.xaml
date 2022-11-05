@@ -1,0 +1,82 @@
+﻿<Window x:Class="PharmacyManagementBYKHM.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expressi      on/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyManagement"
+        mc:Ignorable="d"
+        Title="Dashboard" Icon="Images/dashboard.png" Height="550" Width="800" Background="WhiteSmoke" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Border Background="#2e3137" Margin="10" CornerRadius="10" >
+        <StackPanel>
+            <Grid >
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10" >
+                    <Button x:Name="exit" Width="30" Padding="0" Foreground="BlanchedAlmond" BorderBrush="{x:Null}" Background="{x:Null}" Click="Exit_Click" Margin="0,4">
+                        <Button.Template >
+                            <ControlTemplate>
+                                <Image Source="Images/Exit.png" />
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,70,5" >
+                    <Button x:Name="Back" Width="30" Height="30" Padding="0" Foreground="BlanchedAlmond" BorderBrush="{x:Null}" Background="{x:Null}" >
+                        <Button.Template >
+                            <ControlTemplate>
+                                <Image Source="Images/icon1.jpg" />
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+                <Label Content="DASHBOARD" HorizontalAlignment="Center" FontFamily="bold" FontWeight="ExtraBold" FontSize="40" VerticalAlignment="Center" Foreground="BlanchedAlmond"/>
+            </Grid>
+            <StackPanel Height="500">
+                <Separator/>
+                <Grid Margin="20">
+                    <StackPanel>
+                        <Button Margin="0,100"  x:Name="salebutton" Padding="0" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Left" Content="SALES" Foreground="BlanchedAlmond" FontSize="30" Click="Button_Click">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <StackPanel Orientation="Vertical" >
+                                        <Image Source="Images/sales.png" Width="200" Height="200"/>
+                                    </StackPanel>
+
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel>
+                        <Button Margin="0,100" x:Name="medicinebutton" Padding="0" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Center" Foreground="BlanchedAlmond" FontSize="30" Click="Medicinebutton_Click">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <StackPanel Orientation="Vertical" >
+                                        <Image Source="Images/medicine.png" Width="200" Height="200"/>
+                                    </StackPanel>
+
+                                </ControlTemplate>
+                            </Button.Template>
+
+                        </Button>
+                    </StackPanel>
+                    <StackPanel>
+                        <Button Margin="0,100" x:Name="supplierbutton" Padding="0" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Right" FontSize="30" Click="Supplierbutton_Click">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <StackPanel Orientation="Vertical" >
+                                        <Image Source="Images/sellers.png" Width="200" Height="200"/>
+                                    </StackPanel>
+
+                                </ControlTemplate>
+                            </Button.Template>
+
+                        </Button>
+
+                    </StackPanel>
+                </Grid>
+                <Grid Margin="40">
+                    <StackPanel/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>
